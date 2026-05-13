@@ -1,0 +1,19 @@
+paramiko>=3.4.0
+ 
+# ── paramiko dependencies ─────────────────────────────────────────────────────
+cryptography>=42.0.0     # SSH key handling, encryption
+bcrypt>=4.0.0            # SSH key password hashing
+pynacl>=1.5.0            # Ed25519 / Curve25519 key support
+cffi>=1.16.0             # C foreign function interface (required by cryptography & pynacl)
+ 
+# ── Scheduler — in-process daily job runner (replaces Windows Task Scheduler) ─
+schedule>=1.2.0
+ 
+# ── HTTP client — Zoho CRM function REST API calls ───────────────────────────
+requests>=2.31.0
+ 
+# ── requests dependencies ─────────────────────────────────────────────────────
+certifi>=2024.2.2
+charset-normalizer>=3.3.0
+idna>=3.6
+urllib3>=2.1.0
